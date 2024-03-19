@@ -1,0 +1,36 @@
+.tab-item {
+    /* border: 1px solid red; */
+    height: 38px;
+    width: 190px;
+    margin-bottom: 8px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 19px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    /* transition: 0.2s ease-in-out; */
+    color: #ffffff;
+}
+
+/* .tab-btn:hover {
+    transition: 0.2s ease-in-out;
+    border: 1px solid #91C9FF;
+} */
+
+.btn-content-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.active {
+    border: 1px solid #91C9FF;
+}

@@ -1,0 +1,152 @@
+.forgot-password-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b4d40;
+    position: relative;
+}
+
+.forgot-password-form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    /* border: 1px solid #4d2e59; */
+    padding: 10px 15px 20px 15px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.forgot-password-form-title {
+    /* color: #fff; */
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.form-field {
+    background-color: #224957;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forgot-password-form-input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding: 2px 0 2px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+::placeholder {
+    color: #7D7C80;
+}
+
+.forgot-password-logo {
+    color: #66d4b8;
+    font-size: 25px;
+    margin-left: 8px;
+}
+
+.forgot-password-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(0, 100%, 50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.forgot-password-btn:hover {
+    opacity: 0.8;
+}
+
+.forgot-password-bg {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.success {
+    color: #6ed14f;
+}
+
+.password-reset-link-sent-success-box {
+    width: 450px;
+    height: 280px;
+    padding: 25px 10px 25px 10px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tick-icon-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #95f092;
+}
+
+.tick-icon {
+    font-size: 80px;
+    color: #31d62b;
+}
+
+.success-text {
+    font-size: 40px;
+    font-weight: 500;
+    color: #6bc468;
+    margin: 0;
+}
+
+.success-msg {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seper-line {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sign-in-redirect-btn {
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    width: 90px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+}
+
+.sign-in-redirect-btn:hover {
+    background: #e4ebe4;
+}

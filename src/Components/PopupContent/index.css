@@ -1,0 +1,117 @@
+:root {
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.new-task-from {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.form-label {
+    font-family: var(--font);
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.form-input {
+    border: none;
+    height: 35px;
+    width: 200px;
+    outline: none;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.create-task-btn {
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: "Roboto";
+    font-weight: 600;
+    border-radius: 7px;
+    margin-top: 15px;
+    border: 1px solid #16f725;
+    box-shadow: 0 0 40px 40px #16f725 inset, 0 0 0 0 #16f725;
+    transition: all 150ms ease-in-out;
+}
+
+.create-task-btn:hover {
+    box-shadow: 0 0 5px 0 #16f725 inset, 0 0 10px 2px #16f725;
+    transition: all 150ms ease-in-out;
+}
+
+.text-area {
+    width: 80%;
+    height: 60px;
+    resize: none;
+}
+
+.star {
+    font-size: 20px;
+    color: red;
+}
+
+.msg-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.msg-info-logo {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.msg {
+    font-size: 16px;
+    font-family: var(--font);
+    margin: 0;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.date-picker {
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.priority-opt {
+    background-color: #fff;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

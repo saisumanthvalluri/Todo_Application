@@ -1,0 +1,193 @@
+:root {
+  --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.task-card {
+  width: 220px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* background-color: #403a3a; */
+  background-image: linear-gradient(45deg, #3e135e, #093847);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .task-card {
+      animation: slidein 1s linear;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+
+.task-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px 0px #8908a3;
+  background-image: linear-gradient(45deg, #093847, #3e135e);
+}
+
+.completed {
+  transition: 0.2s ease-in-out;
+  background-image: linear-gradient(45deg, #093847, #3e135e, #05693c);
+}
+
+
+.completed:hover {
+  transition: 0.2s ease-in-out;
+  background-image: linear-gradient(45deg, #05693c, #3e135e, #093847);
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  padding-top:3px;
+  margin-left: 5px;
+}
+
+.created-at {
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+
+.task-name {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  width: 130px;
+}
+
+.priority-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  background-color: #180f33;
+  /* width: 90px; */
+  align-self: flex-start;
+  height: 15px;
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.tag-icon {
+  font-size: 18px;
+  color: #b443de;
+  margin: 0;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.priority {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 500;
+  color: #b443de;
+  margin: 0;
+}
+
+.checkbox-ele {
+  margin: 0;
+  min-height: 22px;
+  min-width: 22px;
+  border-radius: 1px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
+  align-self: flex-start;
+  accent-color: #c912ba;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  align-self: flex-start;
+  /* border: 1px solid #fff; */
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.disable {
+  display: none;
+}
+
+.tooltip-del {
+  position: relative;
+  display: inline-block;
+}
+  
+/* Tooltip text */
+.tooltip-del .tooltiptext-del {
+  opacity: 0;
+  width: 46px;
+  height: 18px;
+  top: 100%;
+  left: 50%;
+  margin-left: -23px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  transition: opacity 0.4s ease-in-out;
+  margin-top: 7px;
+  
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip-del:hover .tooltiptext-del {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  margin-top: 7px;
+}
+
+.tooltip-del .tooltiptext-del::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
